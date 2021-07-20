@@ -1,0 +1,12 @@
+{
+  "id": "MainUser",
+  "username": "mainuser@yopmail.com",
+  "expiryDate": "2021-07-23T14:50:17.336Z",
+  "privilages": ["allPower"],
+  "password": "allo123",
+  "verificationCode": "123",
+  "updatedAt": "2021-07-14T14:50:17.336Z",
+  "locked": false,
+  "createdAt": "2021-07-14T14:50:17.336Z",
+  "enabled": true
+}

@@ -1,0 +1,296 @@
+<html>
+<h2 style="text-align: center; background-color: #4287D6; color: #fff;"><i> Data Entry for Allopathy </i> </h2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<form enctype='application/json' style="text-align: center;" name = "form" class = "data tab">
+  <!-- <div style = "text-align: right;">
+  <label  for="_1"> Text Input Size  :</ </label>
+  <input  id = "mcl" value = "255" placeholder="255" onkeypress="uhi(event)">
+  </div> -->
+  <label for="_1">Medicine Code  :</ </label>
+  <input id = "mId" name = "medicalId" placeholder="Code" maxlength = "10" required><br><br>
+  <label for="2"> Mind General  : </label>
+  <textarea type = "textArea" id = "m1" maxlength = "512" name = "mind[general]" placeholder="Code" ></textarea><br><br>
+  <label for="3">Mind Pointer  : </label>
+  <textarea id = "m2" name = "mind[pointer]" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="4">Head General  :</label>
+  <textarea id = "h1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="5">Head Pointer  :</label>
+  <textarea id = "h2"maxlength = "512"  type="text" name = "medicalId" placeholder="Code" ></textarea><br><br>
+  <label for="6"> Eyes General  :</label>
+  <textarea type = "textArea" maxlength = "512" id = "e1" name = "mind[general]" placeholder="Code" ></textarea><br><br>
+  <label for="7">Eyes Pointer  :</label>
+  <textarea id = "e2" maxlength = "512" name = "mind[pointer]" placeholder="Code" ></textarea><br><br>
+  <label for="8">Ears General  :</label>
+  <textarea id = "ea1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="9 ">Ears Pointer  :</label>
+  <textarea id = "ea2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="10">Face General  :</label>
+  <textarea id = "fa1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="11 ">Face Pointer  :</label>
+  <textarea id = "fa2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="12">Nose General  :</label>
+  <textarea id = "n1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="13 ">Nose Pointer  :</label>
+  <textarea id = "n2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="14">Mouth General  :</label>
+  <textarea id = "mo1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="15">Mouth Pointer  :</label>
+  <textarea id = "mo2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="16">Tongue General  :</label>
+  <textarea id = "t1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="17">Tongue Pointer  :</label>
+  <textarea id = "t2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="18">Taste General  :</label>
+  <textarea id = "ta1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="19 ">Taste Pointer  :</label>
+  <textarea id = "ta2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="20">Gums General  :</label>
+  <textarea id = "g1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="21 ">Gums Pointer  :</label>
+  <textarea id = "g2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="22">Teeth General  :</label>
+  <textarea id = "te1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="23 ">Teeth Pointer  :</label>
+  <textarea id = "te2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="24">Throat General  :</label>
+  <textarea id = "th1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="25">Throat Pointer  :</label>
+  <textarea id = "th2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="26">Stomach General  :</label>
+  <textarea id = "s1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="27">Stomach Pointer  :</label>
+  <textarea id = "s2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="28">Abdomen General  :</label>
+  <textarea id = "a1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="29 ">Abdomen Pointer  :</label>
+  <textarea id = "a2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="30">Urinary General  :</label>
+  <textarea id = "u1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="31 ">Urinary Pointer  :</label>
+  <textarea id = "u2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="32">Male General  :</label>
+  <textarea id = "ma1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="33 ">Male Pointer  :</label>
+  <textarea id = "ma2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="34">Female General  :</label>
+  <textarea id = "f1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="35">Female Pointer  :</label>
+  <textarea id = "f2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="36">Respiratory General  :</label>
+  <textarea id = "r1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="37">Respiratory Pointer  :</label>
+  <textarea id = "r2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="38">Circulatory General  :</label>
+  <textarea id = "c1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="39 ">Circulatory Pointer  :</label>
+  <textarea id = "c2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="40">Locomotor General  :</label>
+  <textarea id = "l1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="41 ">Locomotor Pointer  :</label>
+  <textarea id = "l2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="42">Nervous General  :</label>
+  <textarea id = "ne1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="43 ">Nervous Pointer  :</label>
+  <textarea id = "ne2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="44">Fever General  :</label>
+  <textarea id = "fe1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="45">Fever Pointer  :</label>
+  <textarea id = "fe2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="46">Skin General  :</label>
+  <textarea id = "sk1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="47">Skin Pointer  :</label>
+  <textarea id = "sk2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="48">Generalities General  :</label>
+  <textarea id = "ge1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="49 ">Generalities Pointer  :</label>
+  <textarea id = "ge2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="50">Modalities General  :</label>
+  <textarea id = "mod1" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <label for="51 ">Modalities Pointer  :</label>
+  <textarea id = "mod2" maxlength = "512" placeholder="Code" ></textarea><br><br>
+  <br><br><button type="submit">submit</button>
+</form>
+
+
+
+<script type="text/javascript">
+
+async function postData(url = '') {
+  // Default options are marked with *
+  var data = {};
+  data['medicalId'] = isBlank(document.getElementById("mId").value);
+  data['mind'] = {}
+  data['mind']['general'] = isBlank(document.getElementById("m1").value);
+  data['mind']['pointer'] = isBlank(document.getElementById("m2").value);
+  data['head'] = {}
+  data['head']['general'] = isBlank(document.getElementById("h1").value);
+  data['head']['pointer'] = isBlank(document.getElementById("h2").value);
+  data['eyes'] = {}
+  data['eyes']['general'] = isBlank(document.getElementById("e1").value);
+  data['eyes']['pointer'] = isBlank(document.getElementById("e2").value);
+  data['ears'] = {}
+  data['ears']['general'] = isBlank(document.getElementById("ea1").value);
+  data['ears']['pointer'] = isBlank(document.getElementById("ea2").value);
+  data['nose'] = {}
+  data['nose']['general'] = isBlank(document.getElementById("n1").value);
+  data['nose']['pointer'] = isBlank(document.getElementById("n2").value);
+  data['face'] = {}
+  data['face']['general'] = isBlank(document.getElementById("fa1").value);
+  data['face']['pointer'] = isBlank(document.getElementById("fa2").value);
+  data['mouth'] = {}
+  data['mouth']['general'] = isBlank(document.getElementById("mo1").value);
+  data['mouth']['pointer'] = isBlank(document.getElementById("mo2").value);
+  data['tongue'] = {}
+  data['tongue']['general'] = isBlank(document.getElementById("t1").value);
+  data['tongue']['pointer'] = isBlank(document.getElementById("t2").value);
+  data['taste'] = {}
+  data['taste']['general'] = isBlank(document.getElementById("ta1").value);
+  data['taste']['pointer'] = isBlank(document.getElementById("ta2").value);
+  data['gums'] = {}
+  data['gums']['general'] = isBlank(document.getElementById("g1").value);
+  data['gums']['pointer'] = isBlank(document.getElementById("g2").value);
+  data['teeth'] = {}
+  data['teeth']['general'] = isBlank(document.getElementById("te1").value);
+  data['teeth']['pointer'] = isBlank(document.getElementById("te2").value);
+  data['throat'] = {}
+  data['throat']['general'] = isBlank(document.getElementById("th1").value);
+  data['throat']['pointer'] = isBlank(document.getElementById("th2").value);
+  data['stomach'] = {}
+  data['stomach']['general'] = isBlank(document.getElementById("s1").value);
+  data['stomach']['pointer'] = isBlank(document.getElementById("s2").value);
+  data['abdomen'] = {}
+  data['abdomen']['general'] = isBlank(document.getElementById("a1").value);
+  data['abdomen']['pointer'] = isBlank(document.getElementById("a2").value);
+  data['urinary'] = {}
+  data['urinary']['general'] = isBlank(document.getElementById("u1").value);
+  data['urinary']['pointer'] = isBlank(document.getElementById("u2").value);
+  data['male'] = {}
+  data['male']['general'] = isBlank(document.getElementById("ma1").value);
+  data['male']['pointer'] = isBlank(document.getElementById("ma2").value);
+  data['female'] = {}
+  data['female']['general'] = isBlank(document.getElementById("fe1").value);
+  data['female']['pointer'] = isBlank(document.getElementById("fe2").value);
+  data['respiratory'] = {}
+  data['respiratory']['general'] = isBlank(document.getElementById("r1").value);
+  data['respiratory']['pointer'] = isBlank(document.getElementById("r2").value);
+  data['circulatory'] = {}
+  data['circulatory']['general'] = isBlank(document.getElementById("c1").value);
+  data['circulatory']['pointer'] = isBlank(document.getElementById("c2").value);
+  data['locomotor'] = {}
+  data['locomotor']['general'] = isBlank(document.getElementById("l1").value);
+  data['locomotor']['pointer'] = isBlank(document.getElementById("l2").value);
+  data['nervous'] = {}
+  data['nervous']['general'] = isBlank(document.getElementById("ne1").value);
+  data['nervous']['pointer'] = isBlank(document.getElementById("ne2").value);
+  data['fever'] = {}
+  data['fever']['general'] = isBlank(document.getElementById("fe1").value);
+  data['fever']['pointer'] = isBlank(document.getElementById("fe2").value);
+  data['skin'] = {}
+  data['skin']['general'] = isBlank(document.getElementById("sk1").value);
+  data['skin']['pointer'] = isBlank(document.getElementById("sk2").value);
+  data['generalities'] = {}
+  data['generalities']['general'] = isBlank(document.getElementById("ge1").value);
+  data['generalities']['pointer'] = isBlank(document.getElementById("ge2").value);
+  data['modalities'] = {}
+  data['modalities']['general'] = isBlank(document.getElementById("mod1").value);
+  data['modalities']['pointer'] = isBlank(document.getElementById("mod2").value);
+  
+  console.log(data);
+  const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  console.log(JSON.stringify(data));
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+function isBlank(str){
+  if(!str.trim().length) return null;
+  return  str;
+}
+// function uhi(event){
+// $(function() {        
+//     // Get all textareas that have a "maxlength" property.
+//     $('textarea[maxlength]').each(function() {
+
+//         // Store the jQuery object to be more efficient...
+//         var $textarea = $(this);
+
+//         // Store the maxlength and value of the field.
+//         var maxlength = document.getElementById("mcl").value;
+//         var val = $textarea.val();
+//         console.log(maxlength);
+//         // Trim the field if it has content over the maxlength.
+//         $textarea.val(val.slice(0, maxlength));
+
+//         // Bind the trimming behavior to the "keyup" event.
+//         // $textarea.bind('keyup', function() {
+//         //     $textarea.val($textarea.val().slice(0, maxlength));
+//         // });
+
+//     });
+// });
+// }
+
+function onClick(event){
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const value = Object.fromEntries(data.entries());
+ postData("http://localhost:8000/api/v1/materialMedica");
+}
+
+const form = document.querySelector('form');
+form.addEventListener('submit', onClick);
+// form.addEventListener('onkeypress', uhi);
+
+
+
+// postData('https://example.com/answer', { answer: 42 })
+//   .then(data => {
+//     console.log(data); // JSON data parsed by `data.json()` call
+//   });
+
+
+
+// /**
+//  * sends a request to the specified url from a form. this will change the window location.
+//  * @param {string} path the path to send the post request to
+//  * @param {object} params the parameters to add to the url
+//  * @param {string} [method=post] the method to use on the form
+//  */
+
+// function post(path, params, method='post') {
+
+//   // The rest of this code assumes you are not using a library.
+//   // It can be made less verbose if you use one.
+//   const form = document.createElement('form');
+//   form.method = method;
+//   form.action = path;
+
+//   for (const key in params) {
+//     if (params.hasOwnProperty(key)) {
+//       const hiddenField = document.createElement('input');
+//       hiddenField.type = 'hidden';
+//       hiddenField.name = key;
+//       hiddenField.value = params[key];
+
+//       form.appendChild(hiddenField);
+//     }
+//   }
+
+//   document.body.appendChild(form);
+//   form.submit();
+// }
+</script>
+
+</html>

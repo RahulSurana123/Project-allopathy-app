@@ -1,0 +1,14 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: user-management
+  couchbase:
+    connection-string: localhost
+    username: allopathy
+    password: allo123
+    bucket-name: allopathy
+logging:
+  level:
+    org.springframework: DEBUG
+    com.allopathy.management: DEBUG
