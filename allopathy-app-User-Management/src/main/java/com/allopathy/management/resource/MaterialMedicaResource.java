@@ -31,7 +31,9 @@ public class MaterialMedicaResource {
 		Repertory a = new Repertory();
 		a.setGeneral("String");
 		a.setPointer("String");
-		return new MaterialMedica("String","String",a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,"String");
+		return new MaterialMedica("String", "String", a, a, a, a, a, a, a, a, a,
+				a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, "String",
+				"String", "String", "String", "String", "String");
 	}
 	
 	@PostMapping("/materialMedica")

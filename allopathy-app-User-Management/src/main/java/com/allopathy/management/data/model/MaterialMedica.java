@@ -21,7 +21,9 @@ public class MaterialMedica {
 			Repertory male, Repertory female, Repertory respiratory,
 			Repertory circulatory, Repertory locomotor, Repertory nervous,
 			Repertory fever, Repertory skin, Repertory generalities,
-			Repertory modalities, String classId) {
+			Repertory modalities, String extraField1, String extraField2,
+			String extraField3, String extraField4, String extraField5,
+			String classId) {
 		super();
 		this.id = id;
 		this.medicalId = medicalId;
@@ -50,8 +52,13 @@ public class MaterialMedica {
 		this.skin = skin;
 		this.generalities = generalities;
 		this.modalities = modalities;
+		this.extraField1 = extraField1;
+		this.extraField2 = extraField2;
+		this.extraField3 = extraField3;
+		this.extraField4 = extraField4;
+		this.extraField5 = extraField5;
 		this.classId = classId;
-	}
+	}	
 
 	String id;
 	
@@ -107,10 +114,20 @@ public class MaterialMedica {
 	
 	Repertory modalities;
 	
+	String extraField1;
+	
+	String extraField2;
+	
+	String extraField3;
+	
+	String extraField4;
+	
+	String extraField5;
 	
 	String classId = ClassIdConstants.MaterialMedica_Doc;
 	
 	public void setId() {
 		this.id = UUID.randomUUID().toString().replace("-", "");
 	}
+
 }
